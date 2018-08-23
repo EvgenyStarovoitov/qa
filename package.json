@@ -1,0 +1,24 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "allure-commandline": "^2.7.0",
+    "npm": "^6.4.0",
+    "selenium-standalone": "^6.15.1",
+    "wdio-allure-reporter": "^0.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "wdio-jasmine-framework": "^0.3.5",
+    "wdio-mocha-framework": "^0.6.2",
+    "webdriverio": "^4.13.2"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "on-selenium": "./node_modules/.bin/selenium-standalone install && ./node_modules/.bin/selenium-standalone start"
+  },
+  "author": "",
+  "license": "ISC"
+}
