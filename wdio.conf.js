@@ -41,9 +41,9 @@ exports.config = {
         {
             browserName: 'firefox'
         },
-        {
-            browserName: 'chrome'
-        }
+        // {
+        //     browserName: 'chrome'
+        // }
     ],
     //
     // ===================
@@ -83,7 +83,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if Selenium Grid doesn't send response
-    connectionRetryTimeout: 90000,
+    connectionRetryTimeout: 12000,
     //
     // Default request retries count
     connectionRetryCount: 3,
@@ -120,7 +120,7 @@ exports.config = {
     framework: 'mocha',
     mochaOpts: {
         ui: 'bdd',
-        timeout: 120000
+        timeout: 250000
     },
     //
     // Test reporter for stdout.
@@ -128,7 +128,7 @@ exports.config = {
     // see also: http://webdriver.io/guide/reporters/dot.html
     reporters: [
         'dot',
-        // 'allure'
+        'allure'
     ],
     reporterOptions: {
         outputDir: './allure-results'

@@ -12,13 +12,15 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-webdriverio": "^0.4.3",
+    "mocha-allure-reporter": "^1.4.0",
     "wdio-jasmine-framework": "^0.3.5",
     "wdio-mocha-framework": "^0.6.2",
     "webdriverio": "^4.13.2"
   },
   "scripts": {
     "test": "./node_modules/.bin/wdio wdio.conf.js",
-    "on-selenium": "./node_modules/.bin/selenium-standalone install && ./node_modules/.bin/selenium-standalone start"
+    "start-selenium": "./node_modules/.bin/selenium-standalone install && ./node_modules/.bin/selenium-standalone start",
+    "report" : "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "author": "",
   "license": "ISC"
