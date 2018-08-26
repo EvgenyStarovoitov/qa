@@ -18,14 +18,14 @@ describe('testing copaair.com', () => {
     //   });
     // });
 
-    it('booking tabs should change a class on Active onClick', () => {
+    it('booking tabs should change a class on "Active" onClick', () => {
         $('.nav-tabs-booking').$$('li').forEach(el => {
             el.click();
             expect(el.getAttribute('class')).to.contain('active');
         });
     });
 
-    it('should hide the return field when "one way" is selected', () => {
+    it('should hide the "return input" when "one way" is selected', () => {
         $('.nav-tabs-booking').$$('li')[0].click();
         $('#flightItem_T2').click();
         expect('#flightBooking_returnDate').is.be.visible();
