@@ -41,5 +41,14 @@ describe('testing copaair.com', () => {
         expect('.ng-daterangepicker').is.be.visible();
     });
 
+    it('should show alert notification when input wrong departure city', () => {
+      $('.nav-tabs-booking').$$('li')[0].click();
+      $('#flightItem_T2').click();
+      browser.setValue('#originSearchString', 'test');
+      $('.alert-danger').waitForExist(500);
+      $('#flightBooking_search').click();
+      expect(browser.getText('*=no valid destination')).is.be.include('no valid destination');
+    });
+
 });
 
