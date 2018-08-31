@@ -8,6 +8,7 @@
 
   - The testing application is https://www.copaair.com,
   - Scenario for automate:
+  
     1. Open page
     1. Click each tabs in booking block
     1. Checking the changing class onClick

@@ -1,14 +1,3 @@
-// browser.url('https://www.google.com/');
-
-// describe('finding BANANA Song', () => {
-//   it('should find cool song', () => {
-//     browser
-//       .setValue('#lst-ib', 'Banana Song intext:Despicable Me')
-//       .click('.jsb center input')
-//       .getText('a*=Despicable Me')
-//   });
-// });
-
 // var webdriverio = require('webdriverio');
 // var options = { desiredCapabilities: { browserName: 'chrome' } };
 // var client = webdriverio.remote(options);
